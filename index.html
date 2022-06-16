@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <title>Portfolio --imtiyaz</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+
+<body>
+    <nav id="nav">
+        <a id="navHeading" href="#">Portfolio</a>
+        <ul id="navUl">
+            <!-- <li><a href="#">Home</a></li> -->
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#aboutUs">About</a></li>
+        </ul>
+        <div class="menuButton" id="menuButton" onclick="openNav()">☰</div>
+    </nav>
+    <div class="topDiv displayFlexCenter">
+        <div class="leftRightContainer">
+            <div class="left">
+                <div class="textBox">
+                    <h1>Hello!</h1>
+                    <h1>I am Imtiyaz</h1>
+                    <h1>Web Designer</h1>
+                    <p>I design and build websites that attract the viewers</p>
+                    <a href="#contactUs" class="btnContainer">
+                        <button>Contact Me</button>
+
+                    </a>
+                </div>
+            </div>
+            <div class="right displayFlexCenter">
+                <img src="./images/profile.png" alt="Profile">
+            </div>
+        </div>
+        <img id="profilePicForSM" src="./images/profile.png" alt="Profile">
+    </div>
+
+
+    <div id="services" class="ourHR" style="margin-top: 200px;"></div>
+    <div>
+        <h1 class="contentHeading">My Services</h1>
+        <div class="servicesContainer">
+            <div class="services">
+                <div class="topBox">
+                    <img src="/images/web-design.png" alt="">
+                    <h1>Web Design</h1>
+                </div>
+                <p>I design the websites, and convert Figma, AdobeXD concepts into the exact looking fully responsive
+                    html file.</p>
+            </div>
+            <div class="services">
+                <div class="topBox">
+                    <img src="/images/ux.png" alt="">
+                    <h1>Logo Making</h1>
+                </div>
+                <p>As a Web-designer I've skills to design the Logos, which is needed for every kind of Bussines or
+                    Websites</p>
+            </div>
+            <div class="services">
+                <div class="topBox">
+                    <img src="/images/web-development.png" alt="">
+                    <h1>Front-end Work</h1>
+                </div>
+                <p>Front-end development like writing some complex JavaScript code, Search Engine Optimization, bug
+                    fixes and more.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ____________________Skills___________________ -->
+    <div id="skills" class="ourHR"></div>
+    <div class="skillsContainer">
+        <h1 class="contentHeading">Skills</h1>
+        <div class="skills">
+            <div class="skillBox">
+                <h4>HTML</h4>
+                <div class="levelBox" style="width: 80%;"></div>
+            </div>
+            <div class="skillBox">
+                <h4>CSS</h4>
+                <div class="levelBox" style="width: 90%;"></div>
+            </div>
+            <div class="skillBox">
+                <h4>JavaScript</h4>
+                <div class="levelBox" style="width: 70%;"></div>
+            </div>
+            <div class="skillBox">
+                <h4>React</h4>
+                <div class="levelBox" style="width: 45%;"></div>
+            </div>
+            <div class="skillBox">
+                <h4>Figma</h4>
+                <div class="levelBox" style="width: 65%;"></div>
+            </div>
+        </div>
+    </div>
+    <!-- ______________________End of skills__________________________ -->
+
+
+    <!-- ____________________Projects___________________ -->
+    <div id="projects" class="ourHR"></div>
+    <div class="projectsContainer">
+        <h1 class="contentHeading">Projects</h1>
+        <div class="projectsBoxContainer">
+            <div class="projectBox">
+                <p>Tic Tac Toe</p>
+                <img src="./images/tictactoe.jpg" alt="">
+            </div>
+            <div class="projectBox">
+                <p>Infinity</p>
+                <img src="./images/infinity.jpg" alt="">
+            </div>
+            <div class="projectBox">
+                <p>Project Name</p>
+                <img src="./images/tictactoe.jpg" alt="">
+            </div>
+            <div class="projectBox">
+                <p>Project Name</p>
+                <img src="./images/tictactoe.jpg" alt="">
+            </div>
+            <div class="projectBox">
+                <p>Project Name</p>
+                <img src="./images/tictactoe.jpg" alt="">
+            </div>
+        </div>
+        <a href="./projects.html" class="viewAll">View All</a>
+    </div>
+
+
+
+    <!-- ____________________End ofProjects___________________ -->
+
+
+    <div id="contactUs" class="ourHR"></div>
+    <div class="contactUsContainer">
+        <h1 class="contentHeading">Contact Us</h1>
+        <div class="contactOptions">
+            <div class="options">
+                <img src="./images/el_phone-alt.svg" alt="">
+                <h2>Phone</h2>
+                <a>95******</a>
+            </div>
+            <div class="options">
+                <img src="./images/icomoon-free_mail4.svg" alt="">
+                <h2>Email</h2>
+                <a href="mailto:imtiyaz.india@outlook.com">Send Email</a>
+            </div>
+            <div class="options">
+                <img src="./images/bi_telegram.svg" alt="">
+                <h2>Telegram</h2>
+                <a href="https://t.me/XengShi">Message</a>
+            </div>
+            <div class="options">
+                <img src="./images/el_map-marker-alt.svg" alt="">
+                <h2>Address</h2>
+                <!-- <p>New Delhi, India</p> -->
+                <a href="https://goo.gl/maps/XuuicjZxBCShJzdWA">New Delhi, India</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="aboutUs" class="ourHR"></div>
+    <div class="aboutUsContainer">
+        <h1 class="contentHeading">About Us</h1>
+        <div class="textContainer">
+            <h2>Brief introduction</h2>
+            <p>My name is Imtiyaz, I am a Web Designer. My job is to design a website or convert web-design concepts
+                into a fully functional and responsive web page that client will really love.</p>
+            <h2>Languages I know</h2>
+            <div class="language">
+                <h4>Hindi (Native)</h4>
+                <div class="levelBox" style="width: 90%;"></div>
+                <h4>English (Secondary)</h4>
+                <div class="levelBox" style="width: 64%;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // _______________Code For Navbar__________
+
+        let nav = document.getElementById("nav")
+        let menuButton = document.getElementById("menuButton")
+        let navUl = document.getElementById("navUl")
+
+        let openNav = () => {
+            if (menuButton.innerText === "☰") {
+                nav.style.height = '144px'
+                navUl.classList.add("navUlForSmallDevice")
+                menuButton.innerText = "✕"
+            }
+            else if (menuButton.innerText === "✕") {
+                nav.style.height = "69px"
+                navUl.classList.remove("navUlForSmallDevice")
+                menuButton.innerText = "☰"
+            }
+        }
+
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                navUl.classList.remove("navUlForSmallDevice")
+                nav.style.height = "69px"
+                menuButton.innerText = "☰"
+            }
+        }
+        var x = window.matchMedia("(min-width: 855px)")
+        myFunction(x)
+        x.addListener(myFunction)
+        // _______________end Code For Navbar__________
+
+
+
+
+    </script>
+</body>
+
+</html>
