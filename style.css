@@ -184,7 +184,6 @@ nav ul li a:hover {
 .menuButton {
     display: none;
     cursor: pointer;
-    font-size: 2.4rem;
     background-color: red;
     margin-top: 7.5px;
     margin-right: 15px;
