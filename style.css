@@ -114,7 +114,7 @@ nav ul li a:hover {
     width: fit-content;
     display: block;
     margin-top: 33px;
-    border-radius: 10px;
+    border-radius:12.5px;
     padding: 2px 12px;
 }
 
@@ -127,7 +127,7 @@ nav ul li a:hover {
     padding: 7px 20px;
     outline: none;
     border: 2px solid #44444400;
-    border-radius: 10px;
+    border-radius: 12.5px;
     font-size: 1.5rem;
 }
 
@@ -137,8 +137,9 @@ nav ul li a:hover {
 
 #profilePicForSM {
     display: none;
-    width: 120px;
+    width: 140px;
     margin-right: 10px;
+    border-top-left-radius: 12.5px;
 }
 
 .topDiv .left .textBox {
@@ -161,6 +162,7 @@ nav ul li a:hover {
 
 .topDiv .right img {
     /* border: 1px solid red; */
+    border-radius: 33px;
     width: 300px;
 }
 
@@ -216,7 +218,7 @@ nav ul li a:hover {
     overflow: hidden;
     /* border-radius: 30px; */
     margin: auto;
-    border-radius: 10px;
+    border-radius: 12.5px;
 }
 
 .services .topBox {
@@ -249,17 +251,17 @@ nav ul li a:hover {
 .skills .skillBox {
     background-color: #222;
     margin: 12px;
-    border-radius: 10px;
+    border-radius: 12.5px;
 }
-
 .skillBox h4 {
     padding: 20px;
 }
 
 .skills .skillBox .levelBox {
     width: 300px;
-    height: 20px;
+    height: 25px;
     border-radius: 100px;
+    border-top-left-radius: 0px;
     background: linear-gradient(102.58deg, #FF5B82, #FF92DA, #83A6FF);
 }
 
@@ -278,24 +280,16 @@ nav ul li a:hover {
     overflow: hidden;
     width: 300px;
     height: fit-content;
-    background-color: #6c96ff;
-    background: linear-gradient(102.58deg, #ff856d, #ff75d1, #83A6FF);
-    /* background-color: #333; */
+    /* background-color: #6c96ff;
+    background: linear-gradient(102.58deg, #ff856d, #ff75d1, #83A6FF); */
+    background-color: #222;
     padding-bottom: 8px;
-    /* border-radius: 10px; */
+    border-radius: 12.5px;
     margin: 10px;
     flex-grow: 0;
     flex-shrink: 0;
 }
 
-/* .projectBox:first-child{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-.projectBox:last-child{
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-} */
 .projectsBoxContainer .projectBox img {
     width: 100%;
 }
@@ -313,8 +307,10 @@ nav ul li a:hover {
 }
 
 .projectsBoxContainer .projectBox p {
-    width: 100%;
+    width: fit-content;
     padding: 2px 10px;
+    margin-left: 8px;
+    /* background-color: red; */
 }
 
 .projectsContainer {
@@ -322,7 +318,7 @@ nav ul li a:hover {
 }
 
 .projectsContainer .viewAll {
-    background-color: #6c96ff;
+    /* background-color: #6c96ff; */
     color: #ffffffde;
     text-decoration: none;
     display: block;
@@ -331,7 +327,7 @@ nav ul li a:hover {
     margin-right: 15px;
     margin-top: 9px;
     padding: 9px 25px;
-    border-radius: 10px;
+    border-radius: 12.5px;
     /* margin-bottom: 47.5px; */
 }
 
@@ -351,7 +347,7 @@ nav ul li a:hover {
 
 .contactUsContainer .contactOptions .options {
     display: block;
-    border-radius: 10px;
+    border-radius: 12.5px;
     margin: 17px;
     padding: 20px;
     background-color: #222;
@@ -390,7 +386,7 @@ nav ul li a:hover {
     width: 95%;
     margin: auto;
     background-color: #222;
-    border-radius: 10px;
+    border-radius: 12.5px;
     padding-bottom: 30px;
     padding-top: 12px;
     margin-bottom: 20px
@@ -413,7 +409,7 @@ nav ul li a:hover {
     width: 95%;
     margin: auto;
     margin-top: 7px;
-    border-radius: 10px;
+    border-radius: 12.5px;
 }
 
 .aboutUsContainer .textContainer .language h4 {
