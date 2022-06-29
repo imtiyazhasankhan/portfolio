@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        transition: all 1s;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .container {
+        position: relative;
+        /* background-color: blueviolet; */
+        /* display: none; */
+        width: 420px;
+        padding: 20px;
+        margin: auto;
+    }
+
+    .container h1 {
+        /* width: fit-content; */
+        margin-bottom: 17px;
+        /* margin-left: 4px; */
+        /* background-color: aqua; */
+    }
+
+    .container img {
+        /* position: relative; */
+        width: 100%;
+        /* border: 4px solid #fdfdfd; */
+        border-right: 0px;
+        /* border-radius: 25px; */
+        transform: translateY(-50%);
+        box-shadow: #00000033 0px 18px 50px -10px;
+    }
+
+    .container #downloadButton {
+        display: block;
+        margin-top: 17px;
+        padding: 10px 23px;
+        font-size: 1rem;
+        border: 1px solid white;
+        color: white;
+        background-color: #5C85F4;
+        text-decoration: none;
+        width: fit-content;
+        transform: translateY(100px) scale(0);
+        /* background-color: white; */
+        box-shadow: #00000033 0px 10px 30px -5px;
+        /* border-radius: 10px; */
+    }
+
+    .alert {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        /* visibility: hidden; */
+        background-color: #FB5C85;
+        padding: 0px;
+        transform: translateY(-46px) scale(0);
+        color: white;
+        width: 100%;
+        /* border-radius: 17px; */
+    }
+
+    .alert p {
+        display: block;
+        font-size: 16px;
+        padding: 14px;
+        line-height: 20px;
+    }
+
+    .alert button {
+        background-color: #00000000;
+        /* background-color: #7eff67a7; */
+        padding: 14px;
+        border: none;
+        color: white;
+        font-size: 1.3rem;
+        line-height: 20px;
+    }
+
+    @media only screen and (max-width: 500px) {
+        .container {
+            width: 90vw;
+            padding: 20px 0px;
+        }
+
+        .alert p {
+            font-size: 14px;
+        }
+
+        .alert button {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media only screen and (max-width: 385px) {
+        .container {
+            width: 88vw;
+        }
+
+        .alert p {
+            font-size: 12.4px;
+        }
+
+        .container #downloadButton {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .container {
+            width: 85vw;
+        }
+
+        .container h1 {
+            font-size: 1.69rem;
+        }
+    }
+    
+    /* _______________Loading part____________________- */
+    #loadingDiv {
+        background-color: #ffffffcd;
+        backdrop-filter: saturate(178%) blur(13px);
+        position: fixed;
+        left: 0; right: 0;
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        z-index: 999;
+    }
+    #loadingDiv p {
+        width: fit-content;
+        margin: auto;
+        margin-top: 100px;
+        font-size: 1.25rem;
+    }
+    .loader {
+        margin: auto;
+        margin-top: 20px;
+        border: 10px solid #ffffff;
+        border-radius: 50%;
+        border-top: 10px solid #FB5C85;
+        box-shadow: #fb5c844c 0px 10px 30px -5px;
+        width: 100px;
+        height: 100px;
+        animation: spinner 4s linear infinite;
+    }
+    
+    @keyframes spinner {
+        0% {
+            transform: rotate(0deg);
+        }
+        
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    /* _______________end of Loading part____________________- */
+
+</style>
+
+<body>
+    <div id="loadingDiv">
+        <p>Content is loading please wait</p>
+        <div class="loader"></div>
+    </div>
+
+    <div id="container" class="container">
+        <h1>Resume</h1>
+        <img id="resume" src="./images/Resume.jpg" alt="imtiyaz's Resume">
+        <div id="alert" class="alert">
+            <p>Click on Download button to see the full details</p>
+            <button id="close" onclick="close_alert()">X</button>
+        </div>
+        <a id="downloadButton" href="https://drive.google.com/file/d/1RLEdQXM4Nlv1B3qrRmI8UM0PQsudun-k/view?usp=sharing" download="newfilename" target="_blank">Download</a>
+    </div>
+
+    <script>
+        let alert = document.getElementById("alert")
+        function close_alert() {
+            console.log("Clicked")
+            alert.style.transform = "translateY(-46px) scale(0)"
+            document.getElementById("downloadButton").style.transform = "translateY(-60px)"
+        }
+        setTimeout(() => {
+            document.getElementById("resume").style.transform = "translateY(0%)"
+            setTimeout(() => {
+                alert.style.transform = "translateY(0px) scale(1)"
+            }, 1000);
+            setTimeout(() => {
+                document.getElementById("downloadButton").style.transform = "translateY(0px) scale(1)"
+            }, 1111);
+        }, 11);
+
+
+        // __________________Loading work___________________
+        window.onload = function () {
+
+            var images = document.getElementsByTagName('img'),
+                totalImages = images.length,
+                imagesLoaded = 0,
+                img;
+            function checkForLoaded() {
+                if (imagesLoaded === totalImages) {
+                    var loadingDiv = document.getElementById('loadingDiv');
+                    loadingDiv.parentNode.removeChild(loadingDiv);
+                }
+            }
+            for (var i = 0; i < totalImages; i++) {
+                img = new Image();
+                img.onload = function () {
+                    imagesLoaded++;
+                    checkForLoaded();
+                }
+                img.src = images[i].src;
+            }
+        }
+        //__________________End Loading Work__________________________
+
+    </script>
+</body>
+
+</html>
